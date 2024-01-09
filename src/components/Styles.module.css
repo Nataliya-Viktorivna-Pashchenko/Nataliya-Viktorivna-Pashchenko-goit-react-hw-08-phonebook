@@ -1,0 +1,166 @@
+.main {
+    margin-left: 15px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 425px;
+    border: 3px solid rgb(209, 209, 186);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.input{
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    background-color: rgba(245, 245, 220, 0.643);
+    border: 1px solid rgb(197, 191, 191);
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.filter {
+    display: grid;
+    width: 400px;
+}
+.inputFilter{
+    width: 250px;
+    height: 25px;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    background-color: rgba(245, 245, 220, 0.643);
+    border: 1px solid rgb(197, 191, 191);
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.item{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 120px;
+    justify-items: center;
+    height: 25px;
+    font-size: 17px;
+    border: 1px solid rgb(197, 191, 191);
+    border-radius: 5px;
+    margin-top: 20px; 
+    margin-bottom: 5px;
+    background-color:rgb(245, 245, 220); 
+    text-shadow: 2px 2px 4px #272121a6;
+    box-shadow: 0 4px 8px 0 rgba(8, 7, 7, 0.2), 0 6px 20px 0 rgba(8, 7, 7, 0.2);
+}
+.btn:hover{
+    background-color: rgba(89, 159, 239, 0.714);
+}
+.btnDel{
+    width: 55px;
+    font-size: 13px;
+    border: 1px solid rgb(197, 191, 191);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    background-color:rgb(245, 245, 220); 
+    text-shadow: 2px 2px 4px #272121a6;
+    box-shadow: 0 4px 8px 0 rgba(8, 7, 7, 0.2), 0 6px 20px 0 rgba(8, 7, 7, 0.2);
+ }
+.btnDel:hover {
+    background-color: rgba(89, 159, 239, 0.714);
+}
+.btnLogOut{
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    width: 120px;
+    height: 30px;
+    font-size: 17px;
+    border: 1px solid rgb(197, 191, 191);
+    border-radius: 5px;
+    background-color:rgb(245, 245, 220); 
+    text-shadow: 2px 2px 4px #272121a6;
+    box-shadow: 0 2px 4px 0 rgba(8, 7, 7, 0.2), 0 5px 7px 0 rgba(8, 7, 7, 0.2);
+}
+.btnLogOut:hover{
+    background-color: rgba(89, 159, 239, 0.714);
+}
+.HP {
+    margin-left: auto;
+    margin-right: auto;
+}
+.titleHP {
+    font-size: 70px;
+    color: rgb(245, 245, 220);
+    text-shadow: 4px 4px 6px #000000;
+}
+.UP {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(245, 245, 220);
+}
+.RLP {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(245, 245, 220);
+}
+.titlePage{
+    font-size: 40px;
+    text-shadow: 4px 4px 6px #000000;
+}
+.titleItem {
+    color: rgb(246, 246, 233);
+    font-size: 25px;
+    text-shadow: 4px 4px 6px #000000;
+}
+.contactList{
+    padding: 0;
+    height: 400px;
+    font-size: 20px;
+    padding-left: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: auto;
+    top:5px;
+    margin-top: 0;
+}
+
+.Layout {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+  }
+  .Hello {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  .main {
+    overflow: scroll;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 112px; 
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+    rgba(46, 47, 66, 0.2)),
+    url('../Img/zapisnaKnizhka.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    height: 85vh;
+    }
+  .app {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+  .contactsUserName {
+    display: flex;
+    }
+        
