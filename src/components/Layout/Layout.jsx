@@ -21,10 +21,17 @@ const Layout = ({ children}) => {
     return (
         <div className={css.app}>
         <header className={css.Layout}>
-          <NavLink className= "headerLink" to = "/goit-react-hw-08-phonebook">Home</NavLink>
+
+          <NavLink className= {({ isActive }) =>
+          `${css.headerLink} ${isActive ? css.active : ''}`
+        } to = "/">Home</NavLink>
+
           {authenticated ? (
           <div className={css.contactsUserName}>
-          <NavLink className= "headerLink" to = "/goit-react-hw-08-phonebook/userMenu">Contacts</NavLink>
+          <NavLink className= {({ isActive }) =>
+          `${css.headerLink} ${isActive ? css.active : ''}`
+        } to = "/goit-react-hw-08-phonebook/userMenu">Contacts</NavLink>
+
               <span className={css.Hello}>Hello, {userData.name}!</span>
              
               <button className = {css.btnLogOut} onClick={onLogOut}>Log Out</button>

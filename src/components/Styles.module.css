@@ -163,4 +163,19 @@
   .contactsUserName {
     display: flex;
     }
-        
+
+    .headerLink {
+        position: relative;
+        text-decoration: none;
+        color: rgb(54, 27, 27);
+        font-size: 40px;
+        padding: 20px;
+        margin-right: 25px;
+        display: inline-flex;
+        transition: all.3s;
+        text-shadow: 1px 2px 2px #272121a6;
+      }
+      .active {
+        text-decoration: solid;
+        color: rgb(8, 75, 198);
+      }        
