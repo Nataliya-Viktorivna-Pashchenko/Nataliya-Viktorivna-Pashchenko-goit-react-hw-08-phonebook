@@ -30,7 +30,7 @@ const Layout = ({ children}) => {
           <div className={css.contactsUserName}>
           <NavLink className= {({ isActive }) =>
           `${css.headerLink} ${isActive ? css.active : ''}`
-        } to = "/goit-react-hw-08-phonebook/userMenu">Contacts</NavLink>
+        } to = "/userMenu">Contacts</NavLink>
 
               <span className={css.Hello}>Hello, {userData.name}!</span>
              
@@ -39,8 +39,8 @@ const Layout = ({ children}) => {
           </div>
         ) : (
           <div>
-          <NavLink className= "headerLink" to = "/goit-react-hw-08-phonebook/register">Register</NavLink>
-          <NavLink className= "headerLink" to = "/goit-react-hw-08-phonebook/login">Login</NavLink>
+          <NavLink className= "headerLink" to = "/register">Register</NavLink>
+          <NavLink className= "headerLink" to = "/login">Login</NavLink>
      
     </div>
         )}
