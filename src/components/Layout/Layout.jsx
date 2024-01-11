@@ -24,13 +24,13 @@ const Layout = ({ children}) => {
 
           <NavLink className= {({ isActive }) =>
           `${css.headerLink} ${isActive ? css.active : ''}`
-        } to = "/">Home</NavLink>
+        } to = "/goit-react-hw-08-phonebook/">Home</NavLink>
 
           {authenticated ? (
           <div className={css.contactsUserName}>
           <NavLink className= {({ isActive }) =>
           `${css.headerLink} ${isActive ? css.active : ''}`
-        } to = "/userMenu">Contacts</NavLink>
+        } to = "/goit-react-hw-08-phonebook/userMenu">Contacts</NavLink>
 
               <span className={css.Hello}>Hello, {userData.name}!</span>
              
@@ -39,8 +39,8 @@ const Layout = ({ children}) => {
           </div>
         ) : (
           <div>
-          <NavLink className= "headerLink" to = "/register">Register</NavLink>
-          <NavLink className= "headerLink" to = "/login">Login</NavLink>
+          <NavLink className= "headerLink" to = "/goit-react-hw-08-phonebook/register">Register</NavLink>
+          <NavLink className= "headerLink" to = "/goit-react-hw-08-phonebook/login">Login</NavLink>
      
     </div>
         )}
