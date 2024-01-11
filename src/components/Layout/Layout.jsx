@@ -24,7 +24,7 @@ const Layout = ({ children}) => {
 
           <NavLink className= {({ isActive }) =>
           `${css.headerLink} ${isActive ? css.active : ''}`
-        } to = "/goit-react-hw-08-phonebook/">Home</NavLink>
+        } to = "/">Home</NavLink>
 
           {authenticated ? (
           <div className={css.contactsUserName}>
