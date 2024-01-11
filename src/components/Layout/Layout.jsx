@@ -9,7 +9,11 @@ const Layout = ({ children}) => {
   
   const dispatch = useDispatch();
   const userData = useSelector(selectUserData);
+  console.log('userData: ', userData);
+
   const authenticated = useSelector(selectAuthenticated);
+  console.log('authenticated: ', authenticated);
+
 
   const onLogOut = () => {
     dispatch(logOutThunk());

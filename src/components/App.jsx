@@ -1,4 +1,4 @@
-import { Suspense, lazy} from "react";
+import { Suspense, lazy, useEffect} from "react";
 import { Route, Routes } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
@@ -53,7 +53,10 @@ const appRoutes = [
 
 const App = () => {
   const dispatch = useDispatch();
-    dispatch(refreshThunk());
+    // dispatch(refreshThunk());
+    useEffect(() => {
+      dispatch(refreshThunk());
+    }, [dispatch]);
 
   return (
    <Layout>
