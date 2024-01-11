@@ -51,7 +51,6 @@ export const registerThunk = createAsyncThunk(
                 const token = state.auth.token;
                 setToken(token);
         const { data } = await instance.get('/users/current');
-        console.log('data: ', data);
         
         setToken(data.token);
   

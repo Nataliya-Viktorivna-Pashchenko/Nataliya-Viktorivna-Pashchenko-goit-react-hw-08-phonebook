@@ -1,10 +1,11 @@
 import css from "components/Styles.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addContactsThunk } from "../../redux/contact/contact.reducer";
+import { selectContacts } from "../../redux/contact/contact.selectors";
 
 export const FormUserMenu =() => {
   const dispatch = useDispatch()
-
+  const contacts = useSelector(selectContacts)
 
 
   const onFormSubmit = event => {
@@ -14,7 +15,13 @@ export const FormUserMenu =() => {
             name: event.target.elements.name.value,
             number: event.target.elements.number.value,
     };
-    console.log('newContact: ', newContact);
+
+    const hasDuplicates = contacts.some(item => item.name === newContact.name);
+
+    if (hasDuplicates) {
+      alert(`${newContact.name} is already in the contacts list`);
+      return;
+    }
    
     dispatch(addContactsThunk(newContact));
 
