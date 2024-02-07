@@ -22,7 +22,7 @@ const Layout = ({ children}) => {
         <div className={css.app}>
         <header className={css.Layout}>
 
-          <NavLink className= {({ isActive }) =>
+          <NavLink end className= {({ isActive }) =>
           `${css.headerLink} ${isActive ? css.active : ''}`
         } to = "/goit-react-hw-08-phonebook/">Home</NavLink>
 
